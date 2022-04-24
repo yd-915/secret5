@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<script src="https://kit.fontawesome.com/ba80297aa3.js" crossorigin="anonymous"></script>
+    <title>mail</title>
+    <style>
+    /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+   body{
+       margin: 0;
+       padding: 0;
+       background-image: url(blue.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   .front{
+       text-align: center;
+       align-items: center;
+       
+   }
+   .front h1{
+       font-size: 90px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-weight: bolder;
+       color: rgb(180, 255, 251);
+
+   }
+   .front form input{
+       
+       height: 20px;
+       color: rgb(122, 157, 255);
+       align-items: center;
+       align-content: center;
+       background-color: rgba(0, 0, 0, 0.781);
+       margin: -10px 40px;
+   }
+   .down  textarea{
+      align-items: center;
+      align-content: center;
+      color: rgb(122, 157, 255);
+      background-color: rgba(0, 0, 0, 0.781);
+      border-color: 5PX whitesmoke;
+      margin: 90px -200px;
+   }
+
+.down button{
+  margin: 100px -40px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  color: rgb(84, 250, 242);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none; 
+  align-items: center;
+  align-content: center;
+  
+}
+.down button:hover{
+  background-image: linear-gradient(90deg, rgb(104, 104, 248),rgb(11, 5, 105)) ;
+  border-color: 2px white;
+  color: white;
+  transition: 1s;
+}
+ p{
+    font-size: 20px;
+    float: right;
+    color: rgb(255, 255, 255);
+ 
+}
+.return{
+    float: left;
+}
+.return a{
+    background-color: aquamarine;
+    padding: 14px 30px;
+    border-radius: 30px;
+  color: rgb(12, 11, 11);
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none; 
+  float: left;
+  margin-top: 90px;
+  
+}
+.credit{
+    margin-top: 540px;
+    color: #FFF;
+}
+.credit a{
+    text-decoration: none;
+    color: #83f7ff;
+    margin-top: 540px;
+}
+    </style>
+</head>
+<body>
+  <a href="home.htm">
+    <img src="new.png" alt="">
+  </a>
+   <div class="front">
+       <h1>REACH US</h1>
+       <form action="https://getform.io/f/a9f3e7b2-5ed7-4208-86f0-2919f635b1ac" method="POST">
+     <input type="text" name="Name" placeholder="Name">
+     <input type="email" name="Email" placeholder="Email">
+     <div class="down">
+     <textarea name="Message"  cols="50" rows="15" placeholder="Message"></textarea>
+     <button type="submit">Send</button>
+    </form>
+     
+   </div> 
+   <div class="credit">
+    Photo by <a href="https://unsplash.com/@designhorf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ferenc Horvath</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+   </div>
+  
+</body>
+</html>

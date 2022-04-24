@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propay</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background:  linear-gradient(90deg,#070E22, rgb(12, 12, 255)) ;
+    }
+    .title h1{
+      text-align: center;
+      font-size: 50px;
+      color: rgb(255, 236, 219);
+      letter-spacing: 5px;
+      font-family: "Inter";
+    }
+    .hit img{
+      display: block;
+      height: auto;
+      width: auto;
+    margin-right: 42%;
+    margin-left: 42%;
+    }
+    </style>
+</head>
+<body>
+  <div class="title">
+    <h1>SUBSCRIBE TO ULTIMATE</h1>
+</div>
+  <div style="display: block; margin-left: 45%; margin-right: 45%;" id="paypal-button-container-P-6AX86111L4143654AMJOEQOY"></div>
+    <div class="hit">
+      <img src="new.png" alt="">
+    </div>
+<script src="https://www.paypal.com/sdk/js?client-id=ATCg8FHQjNcLPuCWhrpEDpfE_2raQirlpZc7vaUAfaUnswHFMjlQZuYbBNmRcNPSNTCQHDfrD9vZhAP4&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-6AX86111L4143654AMJOEQOY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-6AX86111L4143654AMJOEQOY'); // Renders the PayPal button
+</script>
+</div>
+</body>
+</html>

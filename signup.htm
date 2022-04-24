@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <title>Signin</title>
+    <style>
+    body{
+        background-image: url(moon.jpg);
+        background-size: auto;
+	background-repeat: no-repeat;
+    }
+.form-wrapper {
+	display: block;
+    margin: 15px;
+}
+
+.form-wrapper input {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #FFF;
+	width: 210px;
+	margin-right: auto;
+    margin-left: auto;
+    display: block; 
+}
+
+.main-sign-up {
+	background-color: rgb(85, 87, 255);
+	border-radius: 5px;
+    border: #ffe083 5px;
+    margin: 10px;
+    padding: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right, #ffe083, #ffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.credit{
+    margin-top: 540px;
+    color: #FFF;
+}
+.credit a{
+    text-decoration: none;
+    color: #ffe083;
+    margin-top: 540px;
+}
+    </style>
+</head>
+<body>
+    <a href="home.htm">
+        <img src="new.png">
+       </a>
+    <h1>LEVEL UP YOUR TIME MANAGEMENT TODAY!</h1>
+    <div class="form-wrapper">
+        <div id="firebaseui-auth-container"></div>
+    </div>
+    <div class="credit">
+        Photo by <a href="https://unsplash.com/@aronvisuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aron Visuals</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+    <script src="config.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
